@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Type Detection - Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="details.html">Details</a>
+        <a href="results.html">Results</a>
+    </nav>
+    <h1>Detection Results</h1>
+    <p>Based on the image given as input, the AI model has predicted that there is a high possibility for your rice is of type </p>
+    
+    <div id="loading" class="loader"></div>
+    <p id="resultText" style="display: none; font-size: 20px;">Rice Type: <strong> </strong></p>
+
+    <br>
+    <a href="index.html"><button class="btn">Home</button></a>
+    <section class="results">
+        <div class="result-container">
+            <div class="result-card">
+                <img src="rice_sample.jpg" alt="Detected Rice Type">
+            </div>
+        </div>
+    </section>
+    <script>
+        setTimeout(() => {
+            document.getElementById('loading').style.display = "none";
+            document.getElementById('resultText').style.display = "block";
+        }, 2000);  // Simulate processing delay
+    </script>
+    
+</body>
+</html>

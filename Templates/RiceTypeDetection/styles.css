@@ -1,0 +1,162 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --blue: #00ff95;
+    --black: #000;
+    --light-blue: #5deab6;
+    --dark-blue: #2a8a4a;
+    --gray: #e5f4c6;
+    --red: #ff4d4d;
+    --dark-red: #cc0000;
+    --white: #ffffff;
+}
+
+/* 🔹 Background Video */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* 🔹 Navbar */
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-left: 15px;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: var(--dark-blue);
+}
+
+/* 🔹 Main Content */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white);
+}
+
+.content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Button */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: var(--light-blue);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--dark-blue);
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #000;
+}
+
+h1 {
+    color: #daf1dd;
+    font-size: 26px;
+}
+p {
+    color: #ffffff;
+    font-size: 26px;
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #3dae85;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #42e979;
+}
+
+/* Image Preview */
+#previewImage {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Loader Animation */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #5deab6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+
+
+/* 🔹 Mobile-Friendly Navigation */
+@media (max-width: 600px) {
+    .navbar {
+        top: 5px;
+        right: 5px;
+        padding: 8px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
